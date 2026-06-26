@@ -29,6 +29,8 @@ mapadmin.start_class(RoomNumber.One)
 mapadmin.end_class(PlayerNumber.One)
 mapadmin.factory_initialization()
 mapadmin.initialization()
+mapadmin.start_build_class(RoomNumber.One)
+mapadmin.end_build_class()
 ```
 
 ```package
