@@ -1,10 +1,11 @@
 {
     "name": "literacy_class_makecode",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
-        "builder": "*"
+        "builder": "*",
+        "literacy_class_makecode_extension": "github:crosschang/literacy_class_makecode_extension#v1.0.0"
     },
     "files": [
         "main.blocks",
