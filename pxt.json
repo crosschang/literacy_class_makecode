@@ -4,7 +4,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "builder": "*"
+        "builder": "*",
+        "literacy_class_makecode_extension": "github:crosschang/literacy_class_makecode_extension#v1.0.0"
     },
     "files": [
         "main.blocks",
