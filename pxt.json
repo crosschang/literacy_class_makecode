@@ -1,0 +1,34 @@
+{
+    "name": "literacy_class_makecode",
+    "version": "0.0.0",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "builder": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "teacher/mapadmin_v1.md",
+        "class1/first/door_open_v1.md",
+        "class1/secend/safety_v1.md",
+        "class2/PIS_v1.md",
+        "class5/classification1_v1.md",
+        "class5/classification2_v1.md",
+        "class5/classification3_v1.md",
+        "class5/classification4_v1.md",
+        "class5/classification5_v1.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "2.1.27",
+        "targetId": "minecraft"
+    },
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "preferredEditor": "tsprj"
+}
