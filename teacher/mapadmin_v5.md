@@ -35,5 +35,5 @@ mapadmin.end_build_class()
 ```
 
 ```package
-literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.0.2
+literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.0.3
 ```

@@ -50,13 +50,13 @@ player.onChat("safety", function () {
 })
 ```
 
+## Step 3
+
 채팅창에 말하기 블록을 추가하고
 
 # 1. 준비됐으면 '확인!'이라고 말해요.
 
 작성해줍니다.
-
-## Step 3
 
 ```blocks
 player.onChat("safety", function () {

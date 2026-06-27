@@ -590,5 +590,5 @@ player.onChat("검사", function (num1) {
 전화번호, 이메일, 주소 같은 말이 들어 있는 문장에서는 개인정보 단서가 발견될 거예요.
 
 ```package
-literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.0.2
+literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.0.3
 ```
