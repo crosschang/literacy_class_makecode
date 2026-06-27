@@ -29,10 +29,11 @@ mapadmin.start_class(RoomNumber.One)
 mapadmin.end_class(PlayerNumber.One)
 mapadmin.factory_initialization()
 mapadmin.initialization()
+mapadmin.end_class_all()
 mapadmin.start_build_class(RoomNumber.One)
 mapadmin.end_build_class()
 ```
 
 ```package
-literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.0.1
+literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.0.2
 ```
