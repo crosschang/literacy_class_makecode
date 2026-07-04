@@ -1,6 +1,6 @@
 {
     "name": "literacy_class_makecode",
-    "version": "1.0.7",
+    "version": "1.1.0",
     "description": "",
     "dependencies": {
         "core": "*",
