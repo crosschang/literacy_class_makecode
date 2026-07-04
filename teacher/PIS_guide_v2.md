@@ -202,7 +202,7 @@ player.onChat("검사 ", function (num1) {})
 반복문은 반드시 1부터 시작합니다.
 
 ```blocks
-for (let 값 = 1; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {}
+for (let 값 = 0; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {}
 ```
 
 이유:
@@ -251,9 +251,6 @@ if (CheckList.GetCheckList_Haskeyword(검사할_문장, 단서)) {}
 학생 코드가 꼬였을 때는 아래 코드를 기준으로 확인해 주세요.
 
 ```blocks
-let 검사할_문장 = ""
-let 발견됨 = false
-let 단서 = ""
 let 개인정보단서: string[] = []
 
 개인정보단서 = [
@@ -279,7 +276,7 @@ player.onChat("검사", function (num1) {
         검사할_문장 = CheckList.GetCheckList_Sentence(CheckList.GetCheckList_Getdata(), num1)
         player.say("검사할 문장 : " + 검사할_문장)
 
-        for (let 값 = 1; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
+        for (let 값 = 0; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
             단서 = CheckList.GetCheckList_Sentence(개인정보단서, 값)
 
             if (CheckList.GetCheckList_Haskeyword(검사할_문장, 단서)) {
@@ -396,7 +393,27 @@ player.onChat("검사", function (num1) {
 
 ---
 
-## 10. 수업 마무리 질문
+### Step 10 지도 포인트
+
+학생용 튜토리얼에서는 MakeCode 블록 화면이 안정적으로 보이도록 반복문을 `0`부터 시작합니다.
+
+```blocks
+for (let 값 = 0; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
+
+}
+```
+
+논리적으로는 `1`부터 시작하는 방식도 가능하지만, MakeCode 튜토리얼에서는 `1`부터 시작하는 `for` 구문이 회색 JavaScript 블록처럼 보일 수 있습니다.
+
+이 수업에서는 확장 블록 안에서 빈 단서 `""`는 검사하지 않도록 처리했기 때문에, `값 = 0`에서 빈 값이 들어가도 결과에는 영향을 주지 않습니다.
+
+```blocks
+if (word == "") {}
+```
+
+따라서 학생용 튜토리얼에서는 **블록 화면의 안정성**을 위해 `0`부터 시작하는 반복문을 사용합니다.
+
+## 11. 수업 마무리 질문
 
 수업 마지막에 아래 질문으로 정리하면 좋습니다.
 
@@ -413,7 +430,7 @@ player.onChat("검사", function (num1) {
 
 ---
 
-## 11. 교사용 빠른 점검표
+## 12. 교사용 빠른 점검표
 
 수업 직전에 아래만 확인해도 됩니다.
 
@@ -428,7 +445,7 @@ player.onChat("검사", function (num1) {
 □ 검사 1, 검사 6, 검사 99 테스트가 되는가?
 ```
 
-## 12. 수업 완료시 해야 할 것
+## 13. 수업 완료시 해야 할 것
 
 해당 블럭코드를 넣고 makecode를 실행시키시면 됩니다.
 
@@ -440,4 +457,8 @@ mapadmin.task(function() {
 
 ```ghost
 mapadmin.back_mapadmin()
+```
+
+```package
+literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.0.9
 ```

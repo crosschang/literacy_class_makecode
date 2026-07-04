@@ -6,9 +6,7 @@
 ```
 
 ```template
-let 검사할_문장 = ""
-let 발견됨 = false
-let 단서 = ""
+
 let 개인정보단서: string[] = []
 개인정보단서 = ["", ""]
 
@@ -213,7 +211,7 @@ player.onChat("검사", function (num1) {
 아직 개인정보 단서를 찾기 전이라서 `false`예요.
 
 ```blocks
-let 발견됨 = false
+
 let 개인정보단서: string[] = []
 개인정보단서 = [
 "학년",
@@ -247,8 +245,7 @@ player.onChat("검사", function (num1) {
 예를 들어 `검사 3`을 입력하면 3번 문장을 가져와요.
 
 ```blocks
-let 검사할_문장 = ""
-let 발견됨 = false
+
 let 개인정보단서: string[] = []
 개인정보단서 = [
 "학년",
@@ -281,8 +278,7 @@ player.onChat("검사", function (num1) {
 가져온 문장을 채팅창에 보여줘요.
 
 ```blocks
-let 검사할_문장 = ""
-let 발견됨 = false
+
 let 개인정보단서: string[] = []
 개인정보단서 = [
 "학년",
@@ -318,9 +314,7 @@ player.onChat("검사", function (num1) {
 개인정보 단서 목록을 1번부터 마지막 번호까지 하나씩 확인할 거예요.
 
 ```blocks
-let 검사할_문장 = ""
-let 발견됨 = false
-let 단서 = ""
+
 let 개인정보단서: string[] = []
 개인정보단서 = [
 "학년",
@@ -345,7 +339,7 @@ player.onChat("검사", function (num1) {
         검사할_문장 = CheckList.GetCheckList_Sentence(CheckList.GetCheckList_Getdata(), num1)
         player.say("검사할 문장 : " + 검사할_문장)
         // @validate-exists
-        for (let 값 = 1; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
+        for (let 값 = 0; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++){
 
         }
     }
@@ -359,9 +353,7 @@ player.onChat("검사", function (num1) {
 `값`이 1이면 1번 단서, `값`이 2이면 2번 단서를 가져와요.
 
 ```blocks
-let 검사할_문장 = ""
-let 발견됨 = false
-let 단서 = ""
+
 let 개인정보단서: string[] = []
 개인정보단서 = [
 "학년",
@@ -385,7 +377,7 @@ player.onChat("검사", function (num1) {
         발견됨 = false
         검사할_문장 = CheckList.GetCheckList_Sentence(CheckList.GetCheckList_Getdata(), num1)
         player.say("검사할 문장 : " + 검사할_문장)
-        for (let 값 = 1; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
+        for (let 값 = 0; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
             // @validate-exists
             단서 = CheckList.GetCheckList_Sentence(개인정보단서, 값)
         }
@@ -400,9 +392,7 @@ player.onChat("검사", function (num1) {
 단서가 들어 있다면 `발견됨`을 `true`로 바꿔요.
 
 ```blocks
-let 검사할_문장 = ""
-let 발견됨 = false
-let 단서 = ""
+
 let 개인정보단서: string[] = []
 개인정보단서 = [
 "학년",
@@ -426,7 +416,7 @@ player.onChat("검사", function (num1) {
         발견됨 = false
         검사할_문장 = CheckList.GetCheckList_Sentence(CheckList.GetCheckList_Getdata(), num1)
         player.say("검사할 문장 : " + 검사할_문장)
-        for (let 값 = 1; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
+        for (let 값 = 0; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
             단서 = CheckList.GetCheckList_Sentence(개인정보단서, 값)
             // @validate-exists
             if (CheckList.GetCheckList_Haskeyword(검사할_문장, 단서)) {
@@ -444,9 +434,7 @@ player.onChat("검사", function (num1) {
 예를 들어 문장에 `학교`가 있으면 `개인정보 단서 발견 : 학교`라고 말해요.
 
 ```blocks
-let 검사할_문장 = ""
-let 발견됨 = false
-let 단서 = ""
+
 let 개인정보단서: string[] = []
 개인정보단서 = [
 "학년",
@@ -470,7 +458,7 @@ player.onChat("검사", function (num1) {
         발견됨 = false
         검사할_문장 = CheckList.GetCheckList_Sentence(CheckList.GetCheckList_Getdata(), num1)
         player.say("검사할 문장 : " + 검사할_문장)
-        for (let 값 = 1; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
+        for (let 값 = 0; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
             단서 = CheckList.GetCheckList_Sentence(개인정보단서, 값)
             if (CheckList.GetCheckList_Haskeyword(검사할_문장, 단서)) {
                 발견됨 = true
@@ -487,9 +475,7 @@ player.onChat("검사", function (num1) {
 반복 검사가 끝난 뒤, 결과를 확인하는 `만약` 블록을 넣어요.
 
 ```blocks
-let 검사할_문장 = ""
-let 발견됨 = false
-let 단서 = ""
+
 let 개인정보단서: string[] = []
 개인정보단서 = [
 "학년",
@@ -513,7 +499,7 @@ player.onChat("검사", function (num1) {
         발견됨 = false
         검사할_문장 = CheckList.GetCheckList_Sentence(CheckList.GetCheckList_Getdata(), num1)
         player.say("검사할 문장 : " + 검사할_문장)
-        for (let 값 = 1; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
+        for (let 값 = 0; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
             단서 = CheckList.GetCheckList_Sentence(개인정보단서, 값)
             if (CheckList.GetCheckList_Haskeyword(검사할_문장, 단서)) {
                 발견됨 = true
@@ -535,9 +521,7 @@ player.onChat("검사", function (num1) {
 개인정보 단서가 발견되었을 때 말할 문장을 넣어요.
 
 ```blocks
-let 검사할_문장 = ""
-let 발견됨 = false
-let 단서 = ""
+
 let 개인정보단서: string[] = []
 개인정보단서 = [
 "학년",
@@ -561,7 +545,7 @@ player.onChat("검사", function (num1) {
         발견됨 = false
         검사할_문장 = CheckList.GetCheckList_Sentence(CheckList.GetCheckList_Getdata(), num1)
         player.say("검사할 문장 : " + 검사할_문장)
-        for (let 값 = 1; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
+        for (let 값 = 0; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
             단서 = CheckList.GetCheckList_Sentence(개인정보단서, 값)
             if (CheckList.GetCheckList_Haskeyword(검사할_문장, 단서)) {
                 발견됨 = true
@@ -585,11 +569,8 @@ player.onChat("검사", function (num1) {
 이제 개인정보 검사 블록코딩이 완성됩니다.
 
 ```blocks
-let 검사할_문장 = ""
-let 발견됨 = false
-let 단서 = ""
-let 개인정보단서: string[] = []
 
+let 개인정보단서: string[] = []
 개인정보단서 = [
 "학년",
 "학교",
@@ -612,7 +593,7 @@ player.onChat("검사", function (num1) {
         발견됨 = false
         검사할_문장 = CheckList.GetCheckList_Sentence(CheckList.GetCheckList_Getdata(), num1)
         player.say("검사할 문장 : " + 검사할_문장)
-        for (let 값 = 1; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
+        for (let 값 = 0; 값 <= CheckList.GetCheckList_Length(개인정보단서); 값++) {
             단서 = CheckList.GetCheckList_Sentence(개인정보단서, 값)
             if (CheckList.GetCheckList_Haskeyword(검사할_문장, 단서)) {
                 발견됨 = true
