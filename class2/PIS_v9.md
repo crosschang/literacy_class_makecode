@@ -635,5 +635,5 @@ CheckList.GetCheckList_Haskeyword(검사할_문장, 단서)
 ```
 
 ```package
-literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.0.9
+literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.1.0
 ```

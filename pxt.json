@@ -5,22 +5,22 @@
     "dependencies": {
         "core": "*",
         "builder": "*",
-        "literacy_class_makecode_extension": "github:crosschang/literacy_class_makecode_extension#v1.0.9"
+        "literacy_class_makecode_extension": "github:crosschang/literacy_class_makecode_extension#v1.1.0"
     },
     "files": [
         "main.blocks",
         "main.ts",
         "README.md",
-        "teacher/mapadmin_v9.md",
-        "teacher/PIS_guide_v2.md",
-        "class1/first/door_open_v7.md",
+        "teacher/mapadmin_v10.md",
+        "teacher/PIS_guide_v3.md",
+        "class1/first/door_open_v8.md",
         "class1/secend/safety_v2.md",
-        "class2/PIS_v8.md",
-        "class5/classification1_v7.md",
-        "class5/classification2_v7.md",
-        "class5/classification3_v7.md",
-        "class5/classification4_v7.md",
-        "class5/classification5_v7.md"
+        "class2/PIS_v9.md",
+        "class5/classification1_v8.md",
+        "class5/classification2_v8.md",
+        "class5/classification3_v8.md",
+        "class5/classification4_v8.md",
+        "class5/classification5_v8.md"
     ],
     "testFiles": [
         "test.ts"
