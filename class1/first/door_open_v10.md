@@ -12,5 +12,5 @@ player.onChat("close", function (num1) {
 ## 지도 이미지에 맞는 채팅명령어를 적어주세요
 
 ```package
-literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.1.1
+literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.1.2
 ```

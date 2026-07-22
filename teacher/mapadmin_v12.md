@@ -32,8 +32,11 @@ mapadmin.initialization()
 mapadmin.end_class_all()
 mapadmin.start_build_class(RoomNumber.One)
 mapadmin.end_build_class()
+mapadmin.give_to_mapadmin("플레이어 이름")
+mapadmin.take_to_mapadmin("플레이어 이름")
+mapadmin.literacy_show_credits()
 ```
 
 ```package
-literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.1.1
+literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.1.2
 ```
