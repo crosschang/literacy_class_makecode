@@ -11,16 +11,16 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "teacher/mapadmin_v14.md",
-        "teacher/PIS_guide_v8.md",
-        "class1/first/door_open_v12.md",
+        "teacher/mapadmin_v15.md",
+        "teacher/PIS_guide_v9.md",
+        "class1/first/door_open_v13.md",
         "class1/secend/safety_v2.md",
-        "class2/PIS_v13.md",
-        "class5/classification1_v12.md",
-        "class5/classification2_v12.md",
-        "class5/classification3_v12.md",
-        "class5/classification4_v12.md",
-        "class5/classification5_v13.md"
+        "class2/PIS_v14.md",
+        "class5/classification1_v13.md",
+        "class5/classification2_v13.md",
+        "class5/classification3_v13.md",
+        "class5/classification4_v13.md",
+        "class5/classification5_v14.md"
     ],
     "testFiles": [
         "test.ts"

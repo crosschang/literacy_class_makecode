@@ -29,5 +29,5 @@ classification.data5_5()
 ```
 
 ```package
-literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.1.4
+literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.1.5
 ```

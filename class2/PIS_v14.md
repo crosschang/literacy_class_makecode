@@ -206,6 +206,8 @@ player.onChat("검사", function (num1) {
 
 ## Step 7
 
+변수 `발견됨`을 만들어줘요.
+
 번호가 맞으면 `발견됨`을 `false`로 바꿔요.
 
 아직 개인정보 단서를 찾기 전이라서 `false`예요.
@@ -309,6 +311,8 @@ player.onChat("검사", function (num1) {
 
 ## Step 10
 
+변수 `값`을 만들어줘요.
+
 반복문을 넣어요.
 
 개인정보 단서 목록을 1번부터 마지막 번호까지 하나씩 확인할 거예요.
@@ -351,6 +355,8 @@ player.onChat("검사", function (num1) {
 반복문 안에서 현재 확인할 개인정보 단서를 가져와요.
 
 `값`이 1이면 1번 단서, `값`이 2이면 2번 단서를 가져와요.
+
+그리고 변수 `단서`를 만들어줘서 값을 저장해줘요.
 
 ```blocks
 
@@ -635,5 +641,5 @@ CheckList.GetCheckList_Haskeyword(검사할_문장, 단서)
 ```
 
 ```package
-literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.1.4
+literacy_class_makecode_extension=github:crosschang/literacy_class_makecode_extension#v1.1.5
 ```
